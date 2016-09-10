@@ -11,6 +11,7 @@ public class Gcd {
         num2 = sc.nextInt();
         
         System.out.println(gcd(num1, num2));
+        System.out.println("Test git");
     }
     
     static int gcd(int m, int n){
