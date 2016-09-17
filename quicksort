@@ -1,0 +1,13 @@
+i=first elem, j=last elem
+move i forward until elem >= pivot found
+j moves forward until elem < pivot found
+if i<= j then swap and i++, j--
+stop when i > j
+
+6, 17, 10, 31, 12, 14, 3, 12, 2 //unsorted
+6, 17, 10, 31, 12, 14, 3, 12, 2 // pivot = 7
+6, 17, 10, 31, 12, 14, 3,12, 2 //12>=7>=2. swap 12 & 2
+6, 2, 10, 31, 12, 14, 3, 12, 12 // 26>=7>=7. swap 26 & 7
+6, 2, 10, 12, 12, 14, 3, 31, 12 //7>=7>=3. swap 2 & 3
+6, 2, 10, 12, 3, 14, 12, 31, 12 // i>j. stop
+6, 2, 10, 12, 3,   14, 12, 31, 12 //recurse quicksort
